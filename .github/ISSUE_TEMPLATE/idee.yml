@@ -1,0 +1,59 @@
+name: Idee aandragen
+description: Deel een idee voor een nieuwe functie of verbetering.
+title: "[Idee] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Bedankt voor het meedenken. Het belangrijkste is niet alleen de gewenste functie,
+        maar vooral welk praktisch probleem of welke situatie je ermee wilt oplossen.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Welk probleem of welke praktijksituatie wil je hiermee oplossen?
+      description: Beschrijf wat er nu lastig, omslachtig of niet mogelijk is.
+      placeholder: Bijvoorbeeld: bij terugkerende reserveringen wil ik...
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Wat stel je voor?
+      description: Beschrijf je idee in je eigen woorden.
+      placeholder: Mijn voorstel is...
+    validations:
+      required: true
+
+  - type: textarea
+    id: current_workaround
+    attributes:
+      label: Hoe los je dit nu op?
+      description: Als je nu een omweg of handmatige werkwijze gebruikt, beschrijf die dan.
+    validations:
+      required: false
+
+  - type: textarea
+    id: benefit
+    attributes:
+      label: Wat zou dit praktisch verbeteren?
+      description: Bijvoorbeeld tijd besparen, fouten voorkomen of meer overzicht geven.
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Aanvullende informatie
+      description: Voeg eventueel een voorbeeld, screenshot of toelichting toe.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: understanding
+    attributes:
+      label: Ter informatie
+      options:
+        - label: Ik begrijp dat een ingediend idee niet automatisch wordt uitgevoerd of onderdeel wordt van een release.
+          required: true
