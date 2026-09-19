@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Geen GitHub-account of liever niet openbaar?
+    url: https://www.planjeruimte.nl/contact
+    about: Gebruik het contactformulier voor vragen of informatie die je niet publiek wilt plaatsen.
+  - name: PlanjeRuimte website
+    url: https://www.planjeruimte.nl/
+    about: Bekijk de actuele informatie over PlanjeRuimte.
