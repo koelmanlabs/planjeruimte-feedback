@@ -1,0 +1,81 @@
+name: Probleem melden
+description: Meld iets dat niet werkt of anders werkt dan verwacht.
+title: "[Probleem] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Bedankt voor je melding. Beschrijf de situatie zo concreet mogelijk.
+        Plaats geen wachtwoorden, persoonsgegevens, klantgegevens of andere vertrouwelijke informatie.
+
+  - type: textarea
+    id: situation
+    attributes:
+      label: Wat probeerde je te doen?
+      description: Beschrijf kort de handeling of het werkproces.
+      placeholder: Bijvoorbeeld: ik wilde een reservering aanpassen...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Wat verwachtte je?
+      placeholder: Beschrijf het verwachte resultaat.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Wat gebeurde er?
+      placeholder: Beschrijf wat je daadwerkelijk zag of wat er misging.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Stappen om het te reproduceren
+      description: Als dat mogelijk is, geef de stappen in volgorde.
+      placeholder: |
+        1. Ga naar ...
+        2. Kies ...
+        3. Klik op ...
+        4. Daarna gebeurt ...
+    validations:
+      required: false
+
+  - type: input
+    id: planjeruimte_version
+    attributes:
+      label: PlanjeRuimte-versie
+      description: Als je die weet.
+      placeholder: Bijvoorbeeld 5.42.x
+    validations:
+      required: false
+
+  - type: input
+    id: joomla_version
+    attributes:
+      label: Joomla-versie
+      description: Als je die weet.
+      placeholder: Bijvoorbeeld 6.1.3
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Aanvullende informatie
+      description: Voeg eventueel screenshots, foutmeldingen of andere relevante informatie toe.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy
+      options:
+        - label: Ik heb gecontroleerd dat deze melding geen wachtwoorden, persoonsgegevens of vertrouwelijke gegevens bevat.
+          required: true
