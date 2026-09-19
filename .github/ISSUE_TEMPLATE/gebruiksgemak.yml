@@ -1,0 +1,57 @@
+name: Gebruiksgemak
+description: Meld iets dat werkt, maar duidelijker, sneller of praktischer kan.
+title: "[Gebruiksgemak] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gebruiksgemak is belangrijk voor PlanjeRuimte. Ook als iets technisch werkt,
+        kan de werkwijze onduidelijk of omslachtig zijn.
+
+  - type: textarea
+    id: area
+    attributes:
+      label: Welk onderdeel gaat het om?
+      placeholder: Bijvoorbeeld kalender, aanvragen, reserveringen, contracten...
+    validations:
+      required: true
+
+  - type: textarea
+    id: current
+    attributes:
+      label: Wat is nu onduidelijk of omslachtig?
+      placeholder: Beschrijf de huidige ervaring.
+    validations:
+      required: true
+
+  - type: textarea
+    id: improvement
+    attributes:
+      label: Hoe zou het duidelijker of praktischer kunnen?
+      placeholder: Een mogelijke verbetering is...
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Praktijkcontext
+      description: Wanneer loop je hier tegenaan en hoe vaak komt dit voor?
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Aanvullende informatie
+      description: Voeg eventueel een screenshot of voorbeeld toe.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy
+      options:
+        - label: Ik heb gecontroleerd dat deze melding geen wachtwoorden, persoonsgegevens of vertrouwelijke gegevens bevat.
+          required: true
